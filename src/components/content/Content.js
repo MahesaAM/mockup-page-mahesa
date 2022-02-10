@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState, useEffect} from 'react';
 import Banner from './Banner';
 import Card from './Card';
 import Card2 from './Card2';
@@ -6,35 +6,18 @@ import Card3 from './Card3';
 import Card4 from './Card4';
 import Movie from './Movie';
 
-class Content extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          error: null,
-          isLoaded: false,
-          items: []
-        };
-      }
-      componentDidMount() {
-        fetch("https://www.omdbapi.com/?apikey=94661849&s=avenger")
+const Content = () => {
+    const [items, setItems] = useState([])
+    
+    useEffect(() => {
+      fetch("https://www.omdbapi.com/?apikey=94661849&s=avenger")
           .then(res => res.json())
           .then(
             (result) => {
-              this.setState({
-                isLoaded: true,
-                items: result.Search
-              });
-            },
-            (error) => {
-              this.setState({
-                isLoaded: true,
-                error
-              });
+              setItems(result.Search)
             }
           )
-      }
-    render() {
-        const { error, isLoaded, items } = this.state;
+    },[])
         return(
             <div id="layoutSidenav_content">
                     <main>
@@ -53,7 +36,6 @@ class Content extends React.Component {
                     </main>
                 </div>
         )
-    }
 }
 
 export default Content;

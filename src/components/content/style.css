@@ -4,6 +4,8 @@
     width: 100%;
     height: 450px;
     padding: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .boxMainBanner {
     width: 300px;

@@ -6,10 +6,10 @@ const Home = () => {
     return(
         <>
             <Navbar/>
-        <div id="layoutSidenav">
+            <div id="layoutSidenav">
             <NavSide/>
             <Content/>
-        </div>
+            </div>
         </>
     )
 }
