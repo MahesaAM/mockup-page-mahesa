@@ -1,7 +1,9 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 
 const Navbar = () => {
+
     const [Click, setClick] = useState(true)
+    
     const handleClick = () => {
         setClick(!Click)
         document.body.classList.toggle('sb-sidenav-toggled');

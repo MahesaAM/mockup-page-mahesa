@@ -1,4 +1,5 @@
-import image from '../../assets/images/featured_post_01.jpg';
+import { featuredPost1 } from '../../../assets';
+
 function NavSide() {
     return(
         <div id="layoutSidenav_nav">
@@ -46,7 +47,7 @@ function NavSide() {
                         <div className="sb-sidenav-footer mt-5">
                         <p className='mt-4'>Featured Post</p>
                         <hr/>
-                        <img className='w-100' src={image} />
+                        <img className='w-100' src={featuredPost1} />
                         <p style={{ fontSize: 15 }} className="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </div>
                     </div>

@@ -1,6 +1,4 @@
-import Content from "../content/Content"
-import Navbar from "../navbar/Navbar"
-import NavSide from "../navside/NavSide"
+import {Navbar,NavSide,Content} from "../../components"
 
 const Home = () => {
     return(

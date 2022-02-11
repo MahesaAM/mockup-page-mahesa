@@ -1,18 +1,14 @@
-import Icon1 from '../../assets/images/icon_01.png';
-import Icon2 from '../../assets/images/icon_02.png';
-import Icon3 from '../../assets/images/icon_03.png';
-import Icon4 from '../../assets/images/icon_04.png';
-import Icon5 from '../../assets/images/icon_05.png';
-import Icon6 from '../../assets/images/icon_06.png';
+import {icon1,icon2,icon3,icon4,icon5,icon6 } from '../../../assets';
 import './style.css'
-function Card() {
+
+const Card = () => {
     return(
-        <div className='row mt-5 mt-5'>
+        <div className='row mt-5'>
             <div className='col-lg-4 col-md-6 col-sm-6 col-xs-12 p-1'>
                 <div className='cardElement'>
                     <div>
                     <div className='boxElement'>
-                    <img width='40' src={Icon1} />
+                    <img width='40' src={icon1} alt='icon1'/>
                     </div>
                     <div className='boxElement mt-4'>
                         <b>Web Design</b>
@@ -27,7 +23,7 @@ function Card() {
                 <div className='cardElement'>
                     <div>
                     <div className='boxElement'>
-                    <img width='40' src={Icon3} />
+                    <img width='40' src={icon2}  alt='icon2'/>
                     </div>
                     <div className='boxElement mt-4'>
                         <b>Bootstrap 4</b>
@@ -42,7 +38,7 @@ function Card() {
                 <div className='cardElement'>
                     <div>
                     <div className='boxElement'>
-                    <img width='40' src={Icon4} />
+                    <img width='40' src={icon3}  alt='icon3'/>
                     </div>
                     <div className='boxElement mt-4'>
                         <b>HTML CSS</b>
@@ -57,7 +53,7 @@ function Card() {
                 <div className='cardElement'>
                     <div>
                     <div className='boxElement'>
-                    <img width='40' src={Icon5} />
+                    <img width='40' src={icon4}  alt='icon4'/>
                     </div>
                     <div className='boxElement mt-4'>
                         <b>Download Free</b>
@@ -72,7 +68,7 @@ function Card() {
                 <div className='cardElement'>
                     <div>
                     <div className='boxElement'>
-                    <img width='40' src={Icon6} />
+                    <img width='40' src={icon5}  alt='icon5'/>
                     </div>
                     <div className='boxElement mt-4'>
                         <b>Get in touch</b>
@@ -87,7 +83,7 @@ function Card() {
                 <div className='cardElement'>
                     <div>
                     <div className='boxElement'>
-                    <img width='40' src={Icon2} />
+                    <img width='40' src={icon6}  alt='icon6'/>
                     </div>
                     <div className='boxElement mt-4'>
                         <b>Spread a word</b>
