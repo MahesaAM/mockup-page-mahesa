@@ -28,10 +28,10 @@ const Content = () => {
                             <Card2/>
                             <Card3/>
                             <Card4/>
-                             <form onSubmit={getSearch}>
+                             <form className='mt-5' onSubmit={getSearch}>
                               <div className='col-md-6'>
                               <div className='form-group d-flex'>
-                              <input className='form-control mr-1' onChange={(e) => setSearch(e.target.value)} />
+                              <input placeholder='Search Movie' className='form-control mr-1' onChange={(e) => setSearch(e.target.value)} />
                               <button className='btn btn-outline-primary' type='submit'>Search</button>
                             </div>
                               </div>
